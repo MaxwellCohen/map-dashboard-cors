@@ -4,7 +4,7 @@ const corsProxy = require('cors-anywhere');
 const checkRateLimit = require('./node_modules/cors-anywhere/lib/rate-limit');
 
 // Listen on a specific host via the HOST environment variable
-const host = process.env.HOST || 'localhost';
+const host = process.env.HOST || '0.0.0.0';
 // Listen on a specific port via the PORT environment variable
 const DEFAULT_PORT = 8080;
 const port = process.env.PORT || DEFAULT_PORT;
