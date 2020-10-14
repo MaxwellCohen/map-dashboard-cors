@@ -12,7 +12,7 @@ const DAY = 24 * 60 * 60;
 
 corsProxy.createServer({
   // Allow all origins
-  checkRateLimit: checkRateLimit('50 3 http://localhost:3000 https://maxwellcohen.github.io/map-dashboard/'),
+  checkRateLimit: checkRateLimit('50 3 http://localhost:3000 https://maxwellcohen.github.io'),
   corsMaxAge: DAY,
   originWhitelist: [
     'http://localhost:3000',
