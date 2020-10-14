@@ -16,7 +16,7 @@ corsProxy.createServer({
   corsMaxAge: DAY,
   originWhitelist: [
     'http://localhost:3000',
-    'https://maxwellcohen.github.io/map-dashboard/'
+    'https://maxwellcohen.github.io'
   ]
 
   /*
