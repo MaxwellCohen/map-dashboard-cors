@@ -11,9 +11,10 @@ const port = process.env.PORT || DEFAULT_PORT;
 
 corsProxy.createServer({
   // Allow all origins
-  checkRateLimit: checkRateLimit('50 3 http://localhost:3000 https://maxwellcohen.github.io'),
+  checkRateLimit: checkRateLimit('50 3 http://localhost:3000 https://localhost:3000 https://maxwellcohen.github.io'),
   originWhitelist: [
     'http://localhost:3000',
+    'https://localhost:3000',
     'https://maxwellcohen.github.io'
   ]
 
